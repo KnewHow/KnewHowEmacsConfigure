@@ -60,7 +60,7 @@
 ;; Configure the dark colour scheme.
 (defun ohai-appearance/dark ()
   (interactive)
-  (use-package gruvbox-theme :config (load-theme 'gruvbox t))
+  (use-package doom-themes :config (load-theme 'doom-one t))
   (set-face-attribute 'linum nil :height 0.7
                       :foreground (face-foreground 'default)
                       :background (face-background 'default))

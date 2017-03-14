@@ -5,7 +5,7 @@
  ;; If there is more than one, they won't work right.
  '(ohai-personal-taste/paredit t)
  '(ohai-personal-taste/run-wizard nil)
- '(ohai-personal-taste/style (quote light))
+ '(ohai-personal-taste/style (quote dark))
  '(ohai-personal-taste/training-wheels nil)
  '(ohai-personal-taste/window-state (quote normal))
  '(ohai/modules
@@ -31,5 +31,9 @@
      ohai-scala
      ohai-php
      ohai-help
-     ohai-elisp)))
+     ohai-elisp
+     ohai-haskell
+     )
+   ))
 (setq-default tramp-ssh-controlmaster-options "-o ControlMaster=auto -o ControlPath='tramp.%%C' -o ControlPersist=no")
+(set-frame-font "Source Code Pro for Powerline")
