@@ -29,7 +29,7 @@
   (dolist (mode '(menu-bar-mode tool-bar-mode scroll-bar-mode))
     (when (fboundp mode) (funcall mode -1))))
 
-(set-face-attribute 'default nil :weight 'Book)
+(set-face-attribute 'default nil :height 130)
 
 (use-package rainbow-delimiters
   :config (add-hook 'prog-mode-hook 'rainbow-delimiters-mode))
