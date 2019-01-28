@@ -25,6 +25,12 @@
  ;; If you edit it by hand, you could mess it up, so be careful.
  ;; Your init file should contain only one such instance.
  ;; If there is more than one, they won't work right.
- '(default ((t (:height 180 :width normal :family "Courier New" :size 16)))))
+ '(default ((t (:height 140 :width normal :family "Courier New" :size 14)))))
 
 (add-hook 'c++-mode-hook (lambda () (setq flycheck-gcc-language-standard "c++11")))
+
+(use-package projectile
+  :init
+  (setq projectile-keymap-prefix (kbd "C-c p"))
+  :config
+  (projectile-mode +1))
